@@ -1,0 +1,32 @@
+{% extends 'images\base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="up">
+    <div class="up-section">
+        <div class="tag">
+            <h1>Nice IMGs</h1>
+            <p>Best photos and images in the world!</p>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="main-section">
+        <form method="post" action="{% url 'main' %}">
+            {% csrf_token %}
+            <div class="search">
+                <input type="text" name="search_text">
+                <button type="submit">Поиск</button>
+            </div>
+        </form>
+        <div class="blocks">
+            {% for i in links %}
+            <div class="block">
+                <img src='{{ i }}'>
+            </div>
+            {% endfor %} 
+        </div>
+    </div>
+</div>
+{% endblock %}

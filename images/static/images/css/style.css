@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url('https://wallpapercave.com/wp/jhUhXn0.jpg');
+}
+
+.up .up-section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.tag h1{
+    color: orange;
+    position: relative;
+    left: 50px;
+}
+.tag p{
+    color: white;
+    position: relative;
+    right: 10px;
+    text-decoration: underline;
+}
+.blocks{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px 2em;
+}
+.search{
+    margin-bottom: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    margin-right: 5px;
+}
+input[type=text] {
+	appearance: none;
+	border: none;
+	outline: none;
+	border-bottom: .2em solid black;
+	background: rgba(black, .2);
+	border-radius: .2em .2em 0 0;
+	padding: .4em;
+	color: black;
+}
+button{
+	appearance: none;
+	border: .2em solid black;
+	background: hsl(0 0 0/0);
+	padding: .85em 1.5em;
+	color: black;
+	border-radius: 2em;
+	transition: 1s;
+}
+button:hover{
+    background: black;
+    color: #fff;
+}
+.block{
+    margin-bottom: 10px;
+    background-color: white;
+    border: 5px solid white;
+    height: 300px;
+    width: 400px;
+    border-radius: 1rem;
+}
+img{
+    height: 300px;
+    width: 400px;
+    border-radius: 1rem;
+}
+@media (max-width: 768px) {
+    .blocks{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px 2em;
+    }
+}
